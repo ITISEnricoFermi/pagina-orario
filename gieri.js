@@ -1,8 +1,5 @@
 function vaiClasse() {
 
-    // if(lezioni === "presenza") location.href = "https://www.itisfermi.edu.it/Orario/19_30%20ott_web/Classi/" + classe + sezione+ ".html";
-    // else location.href = "https://www.itisfermi.edu.it/Orario/19_30%20ott_web/Classi/" + classe + sezione + "-ddi.html";
-
     if(document.getElementById("classe").value != "" && document.getElementById("sezione").value != "") location.href = `https://www.itisfermi.edu.it/Orario/19_30%20ott_web/Classi/${classe.value}${sezione.value}${lezione.value == "Presenza" ? ".html" : "-ddi.html"}`
   }
 
@@ -360,9 +357,9 @@ setInterval(() => {
         <option value="NANNERINI">NANNERINI</option>
         <option value="NAPOLI">NAPOLI</option>
         <option value="NAPOLITANO">NAPOLITANO</option>
-        <option value="MAMMARO">NARDONE</option>
-        <option value="MANCINI">NERVEGNA</option>
-        <option value="MARIANETTI">NOSCHESE</option>
+        <option value="NARDONE">NARDONE</option>
+        <option value="NERVEGNA">NERVEGNA</option>
+        <option value="NOSCHESE">NOSCHESE</option>
       ` 
       vecchiaIniziale = iniziale
       flagDocente = false
