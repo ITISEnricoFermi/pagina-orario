@@ -1,0 +1,373 @@
+
+.class-selector-container{
+  border-radius: 10px;
+  background-color:  #A8C8E4;
+  color: #0C1B28;
+  margin: 10rem auto;
+  padding: 1.2rem 0 1.2rem 2rem;
+  vertical-align: middle;
+  font-family: 'Cairo', sans-serif;
+  border: 2px solid #193650;
+  text-align: center;
+}
+
+.teacher-selector-container{
+  border-radius: 10px;
+  background-color:  #A8C8E4;
+  color: #0C1B28;
+  margin: 10rem auto 10rem;
+  padding: 1.2rem 0 1.2rem 2rem;
+  vertical-align: middle;
+  font-family: 'Cairo', sans-serif;
+  border: 2px solid #193650;
+  text-align: center;
+
+}
+
+.titoli{
+  padding-right: 1.1rem;
+  vertical-align: middle;
+}
+span, select, option {
+  vertical-align: middle;
+}
+.form-selection{
+  width: 7rem;
+}
+
+.form-control{
+  display: inline-block !important;
+  margin-right: 3rem !important;
+}
+
+.btn-visualizza {
+  background-color: #193650;
+  border: #193650;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn-visualizza:hover {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #21486B;
+}
+
+img {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.bg-primary {
+  background-color: #397FBB !important; 
+}
+
+#parti{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* -----= MEDIA QUERY PIXEL 2 =----- */
+@media screen and (max-width: 411px) and (min-width: 376px){
+
+  canvas {
+    height: 180vh !important;
+  }
+
+  #sezioni, #lezioni, #classi, #docenti, #inziali{
+    padding-bottom: 30px;
+  }
+
+  #inziali{
+    padding-top: 10px;
+  }
+
+  #responsive-docente{
+    padding-right: 0.8rem !important;
+  }
+
+  #responsive-sezioni{
+    padding-right: 0.6rem !important;
+    margin-right: 0.2rem !important;
+  }
+
+  #label-sezioni{
+    padding: 5px !important;
+    margin-right: 15px !important;
+  }
+  .class-selector-container{
+    width: 300px !important;
+    margin: 3.8rem auto !important;
+  }
+  .teacher-selector-container{
+    width: 300px !important;
+    margin: 3.8rem auto !important;
+  }
+}
+
+/* -----= MEDIA QUERY IPHONE 5/SE =----- */
+@media screen and (max-width: 320px){
+
+  canvas {
+    height: 190vh !important;
+  }
+
+  #sezioni, #lezioni, #classi, #docenti, #inziali{
+    padding-bottom: 30px;
+  }
+
+  #inziali{
+    padding-top: 10px;
+  }
+
+  #responsive-docente{
+    padding-right: 0.8rem !important;
+  }
+
+  #responsive-sezioni{
+    padding-right: 0.6rem !important;
+    margin-right: 0.2rem !important;
+  }
+
+  #label-sezioni{
+    padding: 5px !important;
+    margin-right: 15px !important;
+  }
+  .class-selector-container{
+    width: 300px !important;
+    margin: 3.8rem auto !important;
+  }
+  .teacher-selector-container{
+    margin: 3.8rem auto 3.8rem !important;
+    width: 300px !important;
+  }
+}
+
+/* -----= MEDIA QUERY IPHONE 6/7/8/IPHONE X =----- */
+@media screen and (max-width: 375px) and (min-width:321px){
+
+  canvas {
+    height: 180vh !important;
+  }
+
+  #sezioni, #lezioni, #classi, #docenti, #inziali{
+    padding-bottom: 30px;
+  }
+
+  #inziali{
+    padding-top: 10px;
+  }
+
+  #responsive-docente{
+    padding-right: 0.8rem !important;
+  }
+
+  #responsive-sezioni{
+    padding-right: 0.6rem !important;
+    margin-right: 0.2rem !important;
+  }
+
+  #label-sezioni{
+    padding: 5px !important;
+    margin-right: 15px !important;
+  }
+  .class-selector-container{
+    width: 300px !important;
+    margin: 8rem auto !important;
+  }
+  .teacher-selector-container{
+    margin: 8rem auto 8rem !important;
+    width: 300px !important;
+  }
+}
+
+/* -----= MEDIA QUERY IPHONE 6/7/8 PLUS =----- */
+@media screen and (max-width: 414px) and (min-width: 412px){
+
+  canvas {
+    height: 180vh !important;
+  }
+
+  .class-selector-container{
+    width: 360px !important;
+    margin: 5rem auto !important;
+  }
+  .teacher-selector-container{
+    margin: 3rem auto 5rem !important;
+    width: 360px !important;
+  }
+  #sezioni, #lezioni, #classi, #docenti, #inziali{
+    padding-bottom: 30px;
+  }
+
+  #inziali{
+    padding-top: 10px;
+  }
+
+  #responsive-docente{
+    padding-right: 0.8rem !important;
+  }
+
+  #responsive-sezioni{
+    padding-right: 0.6rem !important;
+    margin-right: 0.2rem !important;
+  }
+
+  #label-sezioni{
+    padding: 5px !important;
+    margin-right: 15px !important;
+  }
+}
+
+/* -----= MEDIA QUERY IPAD =----- */
+@media screen and (max-width: 768px) and (min-width: 415px){
+
+  .class-selector-container{
+    width: 500px !important;
+    margin: 5rem auto !important;
+  }
+  
+  canvas {
+    height: 100vh !important;
+  }
+
+  .teacher-selector-container{
+    margin: 3rem auto 5rem !important;
+    width: 500px !important;
+  }
+  #sezioni, #lezioni, #classi, #docenti, #inziali{
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  #responsive-classi{
+    margin-right: 2.5rem !important;
+  }
+  #responsive-iniziale{
+    margin-right: 2.5rem !important;
+  }
+
+  #responsive-lezioni{
+    margin-right: 2.5rem !important;
+  }
+
+  #responsive-bottone-sopra{
+    padding: 1.3rem !important;
+    margin-right: 2.5rem !important;
+    margin-top: 1rem !important;
+  }
+
+  #responsive-bottone-sotto{
+    padding: 1rem 5rem 1rem 5rem !important
+  }
+
+  #inziali{
+    padding-top: 10px;
+  }
+
+  #responsive-docente{
+    padding-right: 2.4rem !important;
+  }
+
+  #responsive-sezioni{
+    padding-right: 0.6rem !important;
+    margin-right: 2.5rem !important;
+  }
+
+  #label-sezioni{
+    padding: 5px !important;
+    margin-right: 15px !important;
+  }
+}
+
+/* -----= MEDIA QUERY IPAD PRO =----- */
+@media screen and (max-width: 1024px) and (min-width: 769px){
+  .class-selector-container{
+    width: 750px !important;
+    margin: 5rem auto !important;
+  }
+  .teacher-selector-container{
+    margin: 3rem auto 5rem !important;
+    width: 750px !important;
+  }
+  #sezioni, #lezioni, #classi, #docenti, #inziali{
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  #responsive-classi{
+    margin-right: 2.5rem !important;
+  }
+  #responsive-iniziale{
+    margin-right: 2.5rem !important;
+  }
+
+  #responsive-lezioni{
+    margin-right: 2.5rem !important;
+  }
+
+  #responsive-bottone-sopra{
+    padding: 1rem 8rem !important;
+    margin-right: 2.5rem !important;
+    margin-top: 1rem !important;
+  }
+
+  #responsive-bottone-sotto{
+    padding: 1.3rem 3rem !important;
+    margin-right: 2.5rem !important;
+    margin-top: 1.4rem !important;
+  }
+
+  #inziali{
+    padding-top: 10px;
+  }
+
+  #responsive-docente{
+    padding-right: 2.4rem !important;
+  }
+
+  #responsive-sezioni{
+    padding-right: 0.6rem !important;
+    margin-right: 2.5rem !important;
+  }
+
+  #label-sezioni{
+    padding: 5px !important;
+    margin-right: 15px !important;
+  }
+}
+
+/* ------ Particle Background >>STARTS HERE<< ------*/
+canvas{
+  background-color:#397FBB;
+  height: 100vh;
+}
+/* ------ Particle Background >>ENDS HERE<< ------ */
+
+
+#space {
+  margin: 3rem;
+}
+
+.navbar-trans h1 {
+  background: transparent;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  font-family: 'Cairo', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white !important;
+  text-shadow: 1px 1px black; 
+  cursor: default;
+}
+
+.credits {
+  top: 1rem;
+  color: white !important;
+  cursor: default;
+  font-family: 'Cairo', sans-serif;
+}

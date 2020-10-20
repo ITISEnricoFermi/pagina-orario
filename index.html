@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge;chrome=1" />
+    <link rel="icon" href="https://www.itisfermi.edu.it/wp-content/uploads/2019/04/Logo-Sfondo-Blu.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://www.itisfermi.edu.it/wp-content/uploads/2019/04/Logo-Sfondo-Blu.png" type="image/x-icon" />
+    <meta name="description" content="ITIS Enrico Fermi · Orario" />
+    <meta name="author" content="Gabriele Onorato, Federico Gerardi, Pietro Costanzi Fantini e Denis Vasilev Dimchev" />
+
+    <title>ITIS Enrico Fermi · Orario</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="./gieri.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style media="screen">
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <link type="text/css" media="screen" href="app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="particles">
+      <div id="parti">
+        <nav class="navbar-trans">
+          <a class="navbar-brand" href="https://www.itisfermi.edu.it/"><img src="https://www.itisfermi.edu.it/wp-content/uploads/2015/01/logo_footer.png" alt="ITIS Enrico Fermi" class="img-fluid"></a> 
+          <h1>Orario delle Lezioni</h1>
+        </nav>
+        <div id="space"></div>
+          <div id="classi" class="container class-selector-container form-group">
+            <div class="row">
+              <div id="classi" class="col-sm">
+                <label id="responsive-classi" for="classe" class="titoli">Classe:</label>
+                <span>
+                  <select class="form-control form-selection" id="classe">
+                    <option value="" selected disabled hidden></option>
+                    <option value="1">1°</option>
+                    <option value="2">2°</option>
+                    <option value="3">3°</option>
+                    <option value="4">4°</option>
+                    <option value="5">5°</option>
+                  </select>
+                </span>
+              </div>
+              <div id="sezioni" class="col-sm">
+                <label id="responsive-sezioni" for="sezione" class="titoli">Sezione:</label>
+                <select class="form-control form-selection" id="sezione" disabled></select>
+              </div>
+              <div id="lezioni" class="col-sm">
+                <label id="responsive-lezioni" for="lezione" class="titoli">Lezioni:</label>
+                <span>
+                <select class="form-control form-selection" id="lezione">
+                  <option value="DDI">DDI</option>
+                  <option value="Presenza">Presenza</option>
+                </select>
+                </span>
+              </div>
+              <div class="col-sm">
+                <span>
+                  <button id="responsive-bottone-sopra" onclick="vaiClasse()" type="button" class="btn-visualizza btn btn-primary">Visualizza</button>
+                <span>
+              </div>
+            </div>
+          </div>
+          
+          <div id="professori" class="container teacher-selector-container form-group">
+            <div class="row">
+              <div id="inziali" class="col-sm">
+                <label id="responsive-iniziale" class="titoli" for="iniziale">Iniziale:</label>
+                <span>
+                  <select class="form-control form-selection" id="iniziale">
+                    <option value="" selected disabled hidden></option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="N">N</option>
+                    <option value="O">O</option>
+                    <option value="P">P</option>
+                    <option value="Q">Q</option>
+                    <option value="R">R</option>
+                    <option value="S">S</option>
+                    <option value="T">T</option>
+                    <option value="U">U</option>
+                    <option value="V">V</option>
+                    <option value="Z">Z</option>
+                  </select>
+                </span>
+              </div>
+              <div id="docenti" class="col-sm">
+                <label id="responsive-docente" class="titoli" for="docente">Docente:</label>
+                <select class="form-control form-selection" id="docente" disabled></select>
+              </div>
+              <div class="col-sm">
+                <span>
+                  <button id="responsive-bottone-sotto" onclick="vaiDocenti()" type="button" class="btn-visualizza btn btn-primary">Visualizza</button>
+                  <span>
+              </div>
+            </div>
+          </div>
+          <p class="credits">Made with <span style='font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";'>❤</span> by <a data-toggle="collapse" href="#collapseCredits" role="button" style='color:white'>*click*</a></p>
+          <div style="color: white; cursor: default;font-family: 'Cairo', sans-serif;" class="collapse" id="collapseCredits">
+            <p>Denis Vasilev Dimchev, Federico Gerardi, Pietro Costanzi Fantini and Gabriele Onorato on the 20/10/2020</p>
+        </div>
+      </div> 
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"><\/script>')</script><script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./script.js" ></script>
+    <noscript>You need to enable JS to use buttons properly</noscript>
+   </body>  
+</html>
