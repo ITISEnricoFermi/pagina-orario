@@ -1,3 +1,58 @@
+
+var listaDocenti = {
+    A: [],
+    B: [],
+    C: [],
+    D: [],
+    E: [],
+    F: [],
+    G: [],
+    H: [],
+    I: [],
+    L: [],
+    M: [],
+    N: [],
+    O: [],
+    P: [],
+    Q: [],
+    R: [],
+    S: [],
+    T: [],
+    U: [],
+    V: [],
+    Z: []
+}
+
+$.ajax({
+  type: 'get',
+  url: 'docenti.csv',
+  datatype: 'csv',
+  success: function (response) {
+    rows = response.split('\n')
+    rows.forEach(row => {
+      listaDocenti[row[0].toUpperCase()].push(row)
+    });
+  }})
+
+
+
+function genList(lettera) {
+  lista = listaDocenti[lettera.toUpperCase()]
+
+  let str = ``
+
+  console.log(lista)
+
+  lista.forEach(element => {
+    console.log("awds")
+    console.log(element)
+    str += `<option value="${element}">${element}</option>`
+  })
+  return str
+}
+
+console.log(genList('G'))
+
 function vaiClasse() {
 
     if(document.getElementById("classe").value != "" && document.getElementById("sezione").value != "") location.href = `https://www.itisfermi.edu.it/Orario/19_30%20ott_web/Classi/${classe.value}${sezione.value}${lezione.value == "Presenza" ? ".html" : "-ddi.html"}`
