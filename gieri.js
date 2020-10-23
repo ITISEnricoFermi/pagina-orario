@@ -50,8 +50,7 @@ $.ajax({
   success: function (response) {
     rows = response.split('\n')
     rows.forEach(row => {
-      cols = row.split(':')
-      classi[cols[0]].push(cols[1])
+      classi[row[0]].push(row[1])
       
 });}})
   
