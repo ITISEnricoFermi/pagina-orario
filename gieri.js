@@ -1,5 +1,5 @@
 
-
+//oggetto contenente i vettori per la lista dei docenti
 var listaDocenti = {
     A: [],
     B: [],
@@ -24,6 +24,7 @@ var listaDocenti = {
     Z: []
 }
 
+//oggetto contentente vettori delle classi scolastiche
 var classi = {
   1: [],
   2: [],
@@ -32,6 +33,17 @@ var classi = {
   5: []
 }
 
+/* Sistema di funzionamento responsive dello sfondo */
+
+document.addEventListener('DOMContentLoaded', particles)
+window.addEventListener("resize", particles)
+
+ function particles() {
+  $("#particles").width($(document).width())
+  $("#particles").height($(document).height())
+}
+
+/* Chiamate ajax dal client verso i file csv per ottenere dati classi e docenti */
 $.ajax({
   type: 'get',
   url: 'docenti.csv',
@@ -54,7 +66,7 @@ $.ajax({
       
 });}})
   
-
+/* funzioni che ritornano le opzioni html di tutte le classi presenti nel determinato anno o dei docenti per lettera iniziale */
 function genDocenti(lettera) {
   let lista = listaDocenti[lettera.toUpperCase()]
   let str = ``
@@ -79,6 +91,8 @@ function genClasse(anno) {
   return str
 }
 
+/* relink alle pagine del sito */
+
 function vaiClasse() {
 
     if(document.getElementById("classe").value != "" && document.getElementById("sezione").value != "") 
@@ -96,6 +110,7 @@ function vaiClasse() {
 
 
 setInterval(() => {
+
   var classe = document.getElementById("classe").value
 
     if(document.getElementById("classe").value !== "") {

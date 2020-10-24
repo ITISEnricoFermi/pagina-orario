@@ -74,10 +74,6 @@ img {
 /* -----= MEDIA QUERY PIXEL 2 =----- */
 @media screen and (max-width: 411px) and (min-width: 376px){
 
-  canvas {
-    height: 180vh !important;
-  }
-
   #sezioni, #lezioni, #classi, #docenti, #inziali{
     padding-bottom: 30px;
   }
@@ -112,9 +108,6 @@ img {
 /* -----= MEDIA QUERY IPHONE 5/SE =----- */
 @media screen and (max-width: 320px){
 
-  canvas {
-    height: 190vh !important;
-  }
 
   #sezioni, #lezioni, #classi, #docenti, #inziali{
     padding-bottom: 30px;
@@ -150,10 +143,6 @@ img {
 /* -----= MEDIA QUERY IPHONE 6/7/8/IPHONE X =----- */
 @media screen and (max-width: 375px) and (min-width:321px){
 
-  canvas {
-    height: 180vh !important;
-  }
-
   #sezioni, #lezioni, #classi, #docenti, #inziali{
     padding-bottom: 30px;
   }
@@ -187,10 +176,6 @@ img {
 
 /* -----= MEDIA QUERY IPHONE 6/7/8 PLUS =----- */
 @media screen and (max-width: 414px) and (min-width: 412px){
-
-  canvas {
-    height: 180vh !important;
-  }
 
   .class-selector-container{
     width: 360px !important;
@@ -229,10 +214,6 @@ img {
   .class-selector-container{
     width: 500px !important;
     margin: 5rem auto !important;
-  }
-  
-  canvas {
-    height: 100vh !important;
   }
 
   .teacher-selector-container{
@@ -344,7 +325,6 @@ img {
 /* ------ Particle Background >>STARTS HERE<< ------*/
 canvas{
   background-color:#397FBB;
-  height: 100vh;
 }
 /* ------ Particle Background >>ENDS HERE<< ------ */
 
