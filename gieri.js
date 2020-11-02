@@ -38,7 +38,7 @@ var classi = {
 document.addEventListener('DOMContentLoaded', particles)
 window.addEventListener("resize", particles)
 
- function particles() {
+function particles() {
   $("#particles").width($(document).width())
   $("#particles").height($(document).height())
 }
