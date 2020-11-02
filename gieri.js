@@ -46,7 +46,7 @@ function particles() {
 /* Chiamate ajax dal client verso i file csv per ottenere dati classi e docenti */
 $.ajax({
   type: 'get',
-  url: 'docenti.csv',
+  url: 'docenti.csv?v=' + Math.floor((Math.random() * 100) + 1).toString(),
   datatype: 'csv',
   success: function (response) {
     rows = response.split('\n')
@@ -57,7 +57,7 @@ $.ajax({
 
 $.ajax({
   type: 'get',
-  url: 'classi.csv',
+  url: 'classi.csv?v=' + Math.floor((Math.random() * 100) + 1).toString() ,
   datatype: 'csv',
   success: function (response) {
     rows = response.split('\n')
