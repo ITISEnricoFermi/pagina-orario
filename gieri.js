@@ -1,4 +1,5 @@
 
+
 //oggetto contenente i vettori per la lista dei docenti
 var listaDocenti = {
     A: [],
@@ -105,50 +106,25 @@ function vaiClasse() {
 
   }
 
-  var flagClasse = true
-  var vecchiaClasse = ""
+
+document.getElementById("classe").addEventListener("change", selectClassi)
+document.getElementById("iniziale").addEventListener("change", selectIniziale)
 
 
-setInterval(() => {
+function selectClassi() {
 
-  var classe = document.getElementById("classe").value
-
-    if(document.getElementById("classe").value !== "") {
-      document.getElementById("sezione").disabled = false;
-      
-      if (classe != vecchiaClasse) {
-        flagClasse = true
-      }
-
-      if (flagClasse) {
-
-        document.getElementById("sezione").innerHTML = genClasse(String(classe))
-  
-        vecchiaClasse = classe
-        flagClasse = false
-  
-      }
-}
-  
-}, 1);
-
-var vecchiaIniziale = ""
-var flagDocente = true
-
-setInterval(() => {
-  var iniziale = document.getElementById("iniziale").value
-
-  if(document.getElementById("iniziale").value !== "") {
-    document.getElementById("docente").disabled = false;
-    
-    if (iniziale != vecchiaIniziale) {
-      flagDocente = true
-    }
-
-    if (flagDocente) {
-      document.getElementById("docente").innerHTML = genDocenti(iniziale)
-      vecchiaIniziale = iniziale
-      flagDocente = false
-    }
+  if(document.getElementById("classe") !== ""){
+    document.getElementById("sezione").disabled = false;
+    document.getElementById("sezione").innerHTML = genClasse(String(document.getElementById("classe").value))    
   }
-}, 1);
+}
+
+
+function selectIniziale() {
+
+  if(document.getElementById("iniziale") !== ""){
+    document.getElementById("docente").disabled = false;
+    document.getElementById("docente").innerHTML = genDocenti(String(document.getElementById("iniziale").value))
+  }
+  
+}
