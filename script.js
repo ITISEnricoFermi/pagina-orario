@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
       dotColor: 'rgba(255,255,255,.2)',
       lineColor: 'rgba(255,255,255,.2)'
     });
-    var intro = document.getElementById('intro');
-    intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
   }, false);
   
   
