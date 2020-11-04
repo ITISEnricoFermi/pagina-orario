@@ -37,7 +37,7 @@ var classi = {
 /* Sistema di funzionamento responsive dello sfondo */
 
 document.addEventListener('DOMContentLoaded', particles)
-window.addEventListener("resize", particles)
+$(window).resize(particles)
 
 function particles() {
   $("#particles").width($(document).width())
@@ -106,10 +106,8 @@ function vaiClasse() {
 
   }
 
-
-document.getElementById("classe").addEventListener("change", selectClassi)
-document.getElementById("iniziale").addEventListener("change", selectIniziale)
-
+$("#classe").change(selectClassi)
+$("#iniziale").change(selectIniziale)
 
 function selectClassi() {
 
