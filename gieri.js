@@ -100,9 +100,10 @@ function vaiClasse() {
       location.href = `https://www.itisfermi.edu.it/Orario/19_30%20ott_web/Classi/${document.getElementById("classe").value}${document.getElementById("sezione").value}${document.getElementById("lezione").value == "Presenza" ? ".html" : "-ddi.html"}`
   }
 
-  function vaiDocenti() {
+function vaiDocenti() {
     
-    if(document.getElementById("iniziale").value != "" && document.getElementById("docente").value != "") location.href = `https://www.itisfermi.edu.it/Orario/19_30%20ott_web/Docenti/${document.getElementById("docente").value}.html`
+    if(document.getElementById("iniziale").value != "" && document.getElementById("docente").value != "") 
+      location.href = `https://www.itisfermi.edu.it/Orario/19_30%20ott_web/Docenti/${document.getElementById("docente").value}.html`
 
   }
 
